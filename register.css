@@ -19,18 +19,20 @@ p {
 }
 .inputNome {
     border: 2px #afa9ae solid ;
-    border-radius: 20px;       /*arredonda a borda do input*/
-    height: 20px;
-    width: 50vh;
-    padding: 5px 10px; /*define espaço interno do input ou elemento*/
+    border-radius: 2vh;       /*arredonda a borda do input*/
+    height: 5vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 3px 5px; /*define espaço interno do input ou elemento*/
     font-size: 15px;
 }
 .inputSenha {
     border: 2px #afa9ae solid;
-    border-radius: 20px;
-    height: 20px;
-    width: 50vh;
-    padding: 5px 10px;
+    border-radius: 2vh;
+    height: 5vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 3px 5px;
     font-size: 15px;
 }
 button {
