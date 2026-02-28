@@ -13,7 +13,7 @@ function login(){
         let usuario = usuarios.find(u => u.nome === nome && u.senha === senha);  //registra e verifica se existe o usuario e senha
 
         if(usuario){
-                window.location.href="Home.html";        //redireciona para outra page após a verificação        
+                window.location.href="home.html";        //redireciona para outra page após a verificação        
         }
         else{
                 alert("usuário ou senha icorretos");
@@ -42,4 +42,5 @@ function register(){
         localStorage.setItem("usuarios", JSON.stringify(usuarios)); // puxa nome e senha registrada nas primeiras var e guarda.
         alert("usuário registrado com sucesso!");   
 }
+
 //localStorage.clear();
