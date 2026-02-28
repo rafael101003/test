@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0E0C08; 
+    background-color: #E2FCEF;
+}
+h1 {
+    text-align:center ;
+}
+p {
+    text-align: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;             /*aumenta o comprimento y do objeto ou input*/
+    gap: 10px;
+}
+.inputNome {
+    border: 2px #afa9ae solid ;
+    border-radius: 20px;       /*arredonda a borda do input*/
+    height: 20px;
+    width: 50vh;
+    padding: 5px 10px; /*define espaço interno do input ou elemento*/
+    font-size: 15px;
+}
+.inputSenha {
+    border: 2px #afa9ae solid;
+    border-radius: 20px;
+    height: 20px;
+    width: 50vh;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+button {
+    background-color: #D1C7D2;
+    color: #170F11;
+    border-style: hidden;
+    border-color: #BF92B5;
+    border-radius: 15px;
+    height: 30px;
+    width: 10hv;
+    font-size: 20px;
+    padding: 0px 30px;
+    cursor: pointer; /*como o cursor irá ficar ao passar por cima do elemento*/    
+}
+button:hover {
+    background-color: #B678A7;
+    transition: 0.5s;
+}
