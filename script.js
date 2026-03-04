@@ -41,5 +41,20 @@ function register(){
         usuarios.push({nome,senha});
         localStorage.setItem("usuarios", JSON.stringify(usuarios)); // puxa nome e senha registrada nas primeiras var e guarda.
         alert("usuário registrado com sucesso!");   
-}
+};
 //localStorage.clear();
+const switcher = document.querySelector(".btn");
+
+switcher.addEventListener("click", function() {
+        document.body.classList.toggle("dark-theme");
+
+
+        var ClassName = document.body.className;
+        if(className == "light-theme"){
+                this.textContent = "dark";
+        }
+        else {
+                this.textContent = "light";
+        }
+        console.log('current class name: ' + className);
+});
