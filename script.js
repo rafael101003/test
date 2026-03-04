@@ -40,7 +40,6 @@ function register(){
 
         usuarios.push({nome,senha});
         localStorage.setItem("usuarios", JSON.stringify(usuarios)); // puxa nome e senha registrada nas primeiras var e guarda.
-        alert("usuário registrado com sucesso!");   
+        alert("usuário registrado com sucesso!"); 
 }
-
 //localStorage.clear();
