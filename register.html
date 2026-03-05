@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar-se</title>
-    <link rel="stylesheet" href="register.css">
-    <section> <!--Links de fontes-->
+    <link rel="stylesheet" href="css/register.css">
+                     <!--Links de fontes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    </section>
 </head>
 <body>
     <main>
@@ -22,17 +21,19 @@
             <p>Lembre-se de sempre guardar seu usuário e senha em um local seguro.</p>
         </div>
     </main>
-            <!--botões-->>
+            <!--botões-->
     <section>
-            <div class="inputRegister">
+        <div class="input">
+                        <!--botões de login-->
             <input type="text" class="inputNome" id="inserirNome" placeholder="insira seu nome de usuário">
             <input type="password" class="inputSenha" id="inserirSenha" placeholder="Insira sua senha...">
-                <div>
-                    <button onclick="register()">registrar</button>
-                    <a href="index.html"><button>Voltar</button></a>
-                </div>
-            </div>
+                        <!--botão de login-->
+            <div>
+                <button onclick="register()">Register</button>                
+                <button onclick="voltar()">voltar</button>
+            </div> 
+        </div>
     </section>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
