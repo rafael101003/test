@@ -1,12 +1,18 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0E0C08; 
-    background-color: #E2FCEF;
+    background-image: linear-gradient(rgb(11, 1, 99), rgb(66, 3, 184), rgb(98, 2, 128));
 }
 h1 {
+    color: white;
+    font-family:"Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align:center ;
 }
 p {
+    color: white;
+    font-family: "silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
 }
 .inputRegister {
@@ -18,28 +24,31 @@ p {
     gap: 10px;
 }
 .inputNome {
-    border: 2px #afa9ae solid ;
+    background-color: rgb(226, 226, 226);
+    border: none;
     border-radius: 2vh;       /*arredonda a borda do input*/
     height: 5vh;
     width: 100%;
-    max-width: 500px;
-    padding: 3px 5px; /*define espaço interno do input ou elemento*/
+    max-width: 245px;
+    padding: 3px 10px; /*define espaço interno do input ou elemento*/
     font-size: 15px;
 }
 .inputSenha {
-    border: 2px #afa9ae solid;
+    background-color:  rgb(226, 226, 226);
+    border: none;
     border-radius: 2vh;
     height: 5vh;
     width: 100%;
-    max-width: 500px;
-    padding: 3px 5px;
+    max-width: 245px;
+    padding: 3px 10px;
     font-size: 15px;
 }
 button {
-    background-color: #D1C7D2;
+    font-family:"Krona One", sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(226, 226, 226);
     color: #170F11;
     border-style: hidden;
-    border-color: #BF92B5;
     border-radius: 15px;
     height: 30px;
     width: 10hv;
@@ -48,6 +57,9 @@ button {
     cursor: pointer; /*como o cursor irá ficar ao passar por cima do elemento*/    
 }
 button:hover {
-    background-color: #B678A7;
+    font-family:"Krona One", sans-serif;
+    color: aliceblue;
+    box-shadow: 0px 0px 10px #d13aff75;
+    background-color: #a707d8;
     transition: 0.5s;
 }

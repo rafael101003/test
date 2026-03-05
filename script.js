@@ -7,8 +7,6 @@ function login(){
                 return;
         }
 
-        document.getElementById("mudarNome").innerText=("Seja bem vindo " + nome + "!"); //apresenta o valor guardado na input
-
         let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
         let usuario = usuarios.find(u => u.nome === nome && u.senha === senha);  //registra e verifica se existe o usuario e senha
 
@@ -19,6 +17,9 @@ function login(){
                 alert("usuário ou senha icorretos");
         }
        
+}
+function paginaRegistro(){
+        window.location.href="register.html"
 }
 function register(){
 
@@ -40,6 +41,6 @@ function register(){
 
         usuarios.push({nome,senha});
         localStorage.setItem("usuarios", JSON.stringify(usuarios)); // puxa nome e senha registrada nas primeiras var e guarda.
-        alert("usuário registrado com sucesso!"); 
+        alert("usuário registrado com sucesso!");   
 }
 //localStorage.clear();

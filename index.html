@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="device-width, initial-scale = 1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <section> <!--Links de fontes-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    </section>
+        <!--Links de fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--icone-->
+    <script src="https://kit.fontawesome.com/efd7919b33.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <h1><strong>Welcome to</strong></h1>
-        <p id="mudarNome" >Seiji's Team</p>
+        <h1><strong>Welcome to Login Page</strong></h1>
     </main>
-    <section> <!--botões de login-->
-        <div class="input">
+                <!--icone controle-->
+    <section> 
+        <div class="input">       
+           <div class="alignItens">
+            <p class="paragrafoCopyR">Made By</p>
+                <p>Seiji's Team</p>
+                <i class="fas fa-solid fa-gamepad fa-2x"></i> 
+            </div>  
+                        <!--botões de login-->
             <input type="text" class="inputNome" id="inserirNome" placeholder="insira seu nome de usuário">
             <input type="password" class="inputSenha" id="inserirSenha" placeholder="Insira sua senha...">
+                        <!--botão de login-->
             <div>
                 <button onclick="login()">login</button>
-                <a href="register.html"><button>Register</button></a>
-            </div>    
+                <button onclick="paginaRegistro()">Register</button>
+            </div> 
         </div>
     </section>
     <script src="script.js"></script>
