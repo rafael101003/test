@@ -1,6 +1,18 @@
 body { 
-    background-image: linear-gradient(rgb(11, 1, 99), rgb(66, 3, 184), rgb(98, 2, 128));
-    height: 95.7vh;
+    background-image: linear-gradient(45deg, rgb(11, 1, 99), rgb(66, 3, 184), rgb(98, 2, 128));
+    background-size: 150% 150%;
+    animation: colors 8s ease infinite;
+}   
+@keyframes colors {
+    0%{
+        background-position: 0% 50% ;
+    }
+    50%{
+        background-position: 100% 50%;      /*cria animação do background esticando de um lado para o outro*/
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 .alignItens {
     color: aliceblue;
